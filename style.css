@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.banner-section {
+    background-image: url("./images/Banner\ Image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    text-align: center;
+
+}
+.section-title {
+    padding: 70px 0;
+    text-align: center;
+}
+h2{
+    color: aliceblue;
+}
+h1{
+    color: aliceblue;
+    font-size: 60px;
+}
