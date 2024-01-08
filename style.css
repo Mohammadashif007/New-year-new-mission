@@ -148,6 +148,64 @@
     margin: 20px 0;
 }
 
+/* Holiday section */
+
+.holiday-section {
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.holiday-section h2 {
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.holiday-section .title {
+    font-size: 24px;
+}
+
+/* Discount section */
+.discount-section-container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.discount-section {
+    display: flex;
+    gap: 300px;
+    justify-content: space-between;
+}
+.discount-section-empty {
+    width: 60%;
+}
+.discount-section-image {
+    width: 40%;
+    margin-bottom: -5px;
+    position: relative;
+}
+.discount-img {
+    position: absolute;
+    left: -150px;
+    top: 70px;
+}
+.discount-section-bottom {
+    position: relative;
+}
+.discount-box-img {
+    position: absolute;
+    top: -400px;
+    width: 58%;
+}
+.discount-box-img  {
+    
+}
+
+
 
 
 
