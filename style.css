@@ -53,3 +53,32 @@
     margin-top: 10px;
     margin-bottom: 40px;
 }
+
+/* Welcome section */
+
+.welcome-section {
+    background-image: url('/images/Vectorrr.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    margin: 120px 0;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-section-text {
+    color: aliceblue;
+
+}
+.welcome-section-text h2 {
+    font-size: 60px;
+    margin-bottom: 35px;
+}
+.welcome-section-text button {
+    margin-top: 45px;
+    padding: 2px 4px;
+    font-weight: 700;
+    border: none;
+    
+}
