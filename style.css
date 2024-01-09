@@ -1,11 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 /* Banner section */
 .banner-section {
-    margin-bottom: 10px ;
+    margin-bottom: 10px;
     background-image: url("./images/Banner\ Image.png");
     /* background-image: linear-gradient(0deg,gray, transparent); */
     background-repeat: no-repeat;
@@ -17,15 +18,26 @@
 .section-title {
     /* padding: 70px 0; */
     text-align: center;
-    position: relative;
+    position: absolute;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0)
+    );
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    height: 600px;
+    width: 98%;
+    margin: auto;
 }
-.banner-section h2{
+.section-title h2 {
+    margin-top: 150px;
+}
+.banner-section h2 {
     color: aliceblue;
 }
-.banner-section h1{
+.banner-section h1 {
     color: aliceblue;
     font-size: 60px;
 }
@@ -39,12 +51,12 @@
     align-items: center;
 }
 .offer-section h1 {
-    color: #F00;
+    color: #f00;
     font-size: 80px;
     margin-bottom: 40px;
 }
 .offer-section p {
-    color: #F00;
+    color: #f00;
     font-size: 24px;
 }
 .offer-section h3 {
@@ -57,37 +69,58 @@
 /* Welcome section */
 
 .welcome-section {
-    background-image: url('/images/Vectorrr.png');
+    background-image: url("/images/Vectorrr.png");
     background-repeat: no-repeat;
     background-position: center;
     height: 600px;
-    margin: 120px 0;
+    margin: 30px 0;
     display: flex;
-    gap: 100px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    position: relative;
 }
-.welcome-section-text {
-    color: aliceblue;
-
+.text-container {
+    height: 600px;
+    position: absolute;
+    background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+    );
+    top: 0;
+    margin-left: 14px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: whitesmoke;
 }
-.welcome-section-text h2 {
-    font-size: 60px;
-    margin-bottom: 35px;
+.text {
+    padding: 120px;
+}
+.text h2 {
+    font-size: 55px;
+    margin: 20px 0;
+    
 }
 .welcome-section-text button {
     margin-top: 45px;
+    background-color: #070211;
+    color: whitesmoke;
     padding: 2px 4px;
     font-weight: 700;
     border: none;
-    
+}
+.welcome-section-image {
+    padding-right: 180px;
 }
 
 /* Schedule section */
 
 .schedule-section {
     height: 450px;
-    background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+    background-image: linear-gradient(
+        180deg,
+        rgba(255, 0, 0, 0.1) 0%,
+        rgba(255, 0, 0, 0) 100%
+    );
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -98,16 +131,15 @@
 
 .schedule-section button {
     padding: 8px 15px;
-    background-color: #F00;
+    background-color: #f00;
     color: aliceblue;
     border: none;
     border-radius: 4px;
 }
 
 .primary-color {
-    color: #F00;
+    color: #f00;
 }
-
 
 /* best offer section */
 .best-offer-section {
@@ -119,7 +151,7 @@
     padding: 10px 20px;
 }
 .image-border {
-    border: 12px solid #F00;
+    border: 12px solid #f00;
     border-radius: 50%;
     padding: 20px;
 }
@@ -141,7 +173,6 @@
 }
 .best-offer-left p {
     font-size: 24px;
-
 }
 .best-offer-left h1 {
     font-size: 48px;
@@ -203,7 +234,7 @@
 }
 
 /* gift section */
-.gift-section{
+/* .gift-section {
     margin: 80px 0;
 }
 .gift-section-text {
@@ -222,7 +253,51 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    
+} */
+
+.gift-section {
+    width: 98%;
+    margin: 30px auto;
 }
+
+.gift-section-text {
+   margin: 60px 0;
+}
+
+.gift-section-text h2 {
+    margin: 10px 0;
+    font-size: 35px;
+}
+
+.gift-container {
+    
+    margin: 0 auto;
+    /* height: 800px; */
+    /* background-color: #070211; */
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.gift-container .gift-box {
+    /* width: 400px; */
+    box-sizing: border-box;
+    display: inline-block;
+}
+.gift-container .gift-box .gift-img {
+    position: relative;
+    overflow: hidden;
+}
+.gift-container .gift-box .gift-img img {
+    max-width: 100%;
+    transition: transform 1s;
+}
+.gift-container .gift-box:hover .gift-img img {
+    transform: scale(1.2);
+}
+
+
 
 /* news letter */
 
@@ -251,7 +326,7 @@
 }
 .news-letter-container button {
     border: none;
-    background-color: #F00;
+    background-color: #f00;
     color: aliceblue;
     padding: 15px 30px;
     border-top-right-radius: 50px;
@@ -282,8 +357,3 @@
     display: flex;
     justify-content: space-between;
 }
-
-
-
-
-
